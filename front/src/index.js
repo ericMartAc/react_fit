@@ -1,23 +1,14 @@
-/*
-const element = document.createElement('h1');
-element.innerHTML = 'Hello with JS';
-const contenedor = document.getElementById('root');
-contenedor.appendChild(element);
-*/
 import React from 'react'
 import ReactDom from 'react-dom'
 
-const name = {
-  frist: 'Eric',
-  second: 'Martinez',
-  age: 28
-}
-//const element = <h1>Hello with ReactJS and React Dom</h1>
-function element2(name){
-return <span>Created By: {name.frist} {name.second}, Edad: {name.age}</span>
+const user = ['Eric', 'Martinez', 1992, 'Barranquilla']
 
+function getGetting(user) {
+  const fecha = new Date();
+  var año = fecha.getUTCFullYear();
+return <span>{user[0]} {user[1]} tiene {año - user[2]} años, nacido en {user[3]} </span>
 }
 
 const container = document.getElementById('root')
 
-ReactDom.render(element2(name),container)
+ReactDom.render(getGetting(user), container)
