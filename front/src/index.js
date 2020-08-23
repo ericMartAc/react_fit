@@ -2,19 +2,15 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import Card from './componentes/Carta.js'
 import 'bootstrap/dist/css/bootstrap.css'
-import eeImg from './img/ee.jpg'
 import fondo from './img/fondo.jpg'
 
 
 const container = document.getElementById('root')
 
 ReactDom.render(<Card
-  titulo="Carta de presentación"
-  descripcion="Eric Martinez Acelas"
+//le pasamos atributos desde el front
+//el componente va cargar props propios y estos
   fondo={fondo}
-  img={eeImg}
-  colorL="#A74CF2"
-  colorR="#617BFB"
 />, container)
 
 
