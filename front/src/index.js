@@ -1,24 +1,12 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Card from './componentes/Carta.js'
-import Welcome from './componentes/Welcome.js'
 import 'bootstrap/dist/css/bootstrap.css'
-import fondo from './img/fondo.jpg'
-
+import Index from './index.pag/Index.js'
 
 const container = document.getElementById('root')
 
 ReactDom.render(
-  <div>
-    <Welcome
-      userName="Eric Martinez"
-    />
-    <Card
-      //le pasamos atributos desde el front
-      //el componente va cargar props propios y estos
-      fondo={fondo}
-    />
-  </div>
+  <Index />
   , container)
 
 

@@ -9,7 +9,7 @@ class Carta extends React.Component {
         super(props)
         this.state = {
             titulo: "Carta de presentación",
-            descripcion: "Cargando usuario",
+            descripcion: "Cargando usuario.......",
             imagen : "https://www.cognodata.com/wp-content/uploads/2019/01/perfil-de-cliente-e1549901099803-1.jpg"
         }
     }
@@ -46,7 +46,7 @@ class Carta extends React.Component {
                         </div>
                         <div className="col-6">
                             <h1>{this.state.titulo}</h1>
-                            <p>{this.state.descripcion}</p>
+                            <span>Usuario: {this.state.descripcion}</span>
                         </div>
                     </div>
                 </div>
